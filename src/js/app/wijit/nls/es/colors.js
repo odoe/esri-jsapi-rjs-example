@@ -1,4 +1,4 @@
-define('app/wijit/nls/es/colors',
+define(
     {
         "red": "rojo",
         "blue": "azul",

@@ -35,7 +35,8 @@ module.exports = function (grunt) {
             'dijit': 'empty:',
             'text': '../../deps/text/text',
             'domReady': '../../deps/domReady/domReady',
-            'i18n': '../../deps/i18n/i18n'
+            'i18n': '../../deps/i18n/i18n',
+            'app/wijit/nls/es/colors': 'app/wijit/nls/es/colors'
           },
           exclude: ['esri', 'dojo', 'dojox', 'dijit', 'text', 'domReady', 'i18n'],
           include: ['app/wijit/nls/es/colors'],
