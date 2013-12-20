@@ -27,6 +27,7 @@ module.exports = function (grunt) {
           baseUrl: 'src/js',
           name: 'main',
           out: 'dist/js/main-built.js',
+          //locale: 'es',
           paths: {
             'esri': 'empty:',
             'dojo': 'empty:',
@@ -37,6 +38,7 @@ module.exports = function (grunt) {
             'i18n': '../../deps/i18n/i18n'
           },
           exclude: ['esri', 'dojo', 'dojox', 'dijit', 'text', 'domReady', 'i18n'],
+          include: ['app/wijit/nls/es/colors'],
           inlineText: true,
           optimize: 'uglify2'
         }
@@ -67,11 +69,12 @@ module.exports = function (grunt) {
         replacements: [{
           from: 'js/main.js',
           to: 'js/main-built.js'
-        },
-        {
-          from: '{ name: "app",',
-          to: '// { name: "app",'
-        }]
+        }
+        //{
+        //  from: '{ name: "app",',
+        //  to: '// { name: "app",'
+        //}
+        ]
       }
     },
 
